@@ -8,7 +8,6 @@ const FlashSales = () => {
   const [timeLeft, setTimeLeft] = useState({ days: 3, hours: 23, minutes: 19, seconds: 56 });
 
   useEffect(() => {
-    // Загрузка продуктов из DummyJSON как пример акционных товаров
     axios.get('https://dummyjson.com/products?limit=10')
       .then(response => setProducts(response.data.products))
       .catch(error => console.error('Ошибка при загрузке продуктов:', error));

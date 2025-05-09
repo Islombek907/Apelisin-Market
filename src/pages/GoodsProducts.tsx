@@ -11,14 +11,15 @@ const GoodsProducts = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
   const [loading, setLoading] = useState(true);
+  const itemsPerPage = 10;
 
   useEffect(() => {
     const loadProducts = async () => {
       setLoading(true);
       try {
-        const response = await axios.get(`https://dummyjson.com/products/category/${categoryName}?limit=100&skip=${(currentPage - 1) * 10}`);
+        const response = await axios.get(`https://dummyjson.com/products/category/${categoryName}?limit=${itemsPerPage}&skip=${(currentPage - 1) * itemsPerPage}`);
         setProducts(response.data.products);
-        setTotalPages(Math.ceil(response.data.total / 10));
+        setTotalPages(Math.ceil(response.data.total / itemsPerPage));
       } catch (error) {
         console.error('Ошибка при загрузке продуктов:', error);
         setProducts([]);
