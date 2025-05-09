@@ -1,0 +1,68 @@
+.sign__in {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 140px;
+    .create__account {
+        display: flex;
+        flex-direction: column;
+        h1 {
+            font-weight: 500;
+            font-size: 36px;
+            font-family: 'Inter';
+            letter-spacing: 0.04em;
+            margin-bottom: 24px;
+        }
+        .register {
+            display: flex;
+            flex-direction: column;
+            span {
+                margin-bottom: 48px;
+            }
+            input {
+                font-size: 16px;
+                border-bottom: 1px solid #000;
+                opacity: 0.4;
+                margin-bottom: 40px;
+                padding-bottom: 8px;
+            }
+            .account {
+                width: 371px;
+                height: 56px;
+                background: #db4444;
+                font-weight: 500;
+                border-radius: 4px;
+                color: #fafafa;
+                margin-bottom: 15px;
+                cursor: pointer;
+            }
+            .google {
+                width: 371px;
+                height: 56px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 16px;
+                border: 1px solid rgba(0, 0, 0, 0.4);
+                border-radius: 4px;
+                margin-bottom: 34px;
+                cursor: pointer;
+            }
+        }
+        .already__have {
+            display: flex;
+            gap: 16px;
+            margin-left: 60px;
+            span {
+                opacity: 0.7;
+            }
+            a {
+                font-weight: 500;
+                opacity: 0.7;
+                border-bottom: 1px solid #000;
+                color: #000;
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,0 +1,108 @@
+.our__contact {
+    .container {
+        display: flex;
+        gap: 12px;
+        padding: 0;
+        margin-top: 80px;
+        font-size: 14px;
+        margin-bottom: 80px;
+        .home {
+            opacity: 0.5;
+            color: #000;
+        }
+        .contact {
+            color: #000;
+        }
+    }
+    .сontact-container {
+        display: flex;
+        gap: 30px;
+        .contact__info {
+            display: flex;
+            flex-direction: column;
+            padding: 40px 35px;
+            border-radius: 4px;
+            width: 340px;
+            height: 457px;
+            box-shadow: 0 1px 13px 0 rgba(0, 0, 0, 0.05);
+            background: #fff;
+            .contact-call {
+                .line {
+                    margin: 32px 0;
+                }
+                .available {
+                    margin-bottom: 16px;
+                }
+                .call__us {
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+                    margin-bottom: 24px;
+                    h3 {
+                        font-weight: 500;
+                        font-size: 16px;
+                    }
+                }
+                
+            }
+            .write__to-us {
+                .write__us {
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+                    margin-bottom: 24px;
+                }
+                a {
+                    display: block;
+                    font-size: 14px;
+                    color: #000;
+                }
+                a:not(:last-child) {
+                    margin-bottom: 16px;
+                }
+            }
+        }
+        .contact-form {
+            max-width: 800px;
+            width: 100%;
+            height: 457px;
+            display: flex;
+            flex-direction: column; 
+            gap: 16px; 
+            padding: 40px 31px;
+            box-shadow: 0 1px 13px 0 rgba(0, 0, 0, 0.05);
+            .form-fields {
+                display: flex;
+                flex-wrap: wrap; 
+                gap: 16px; 
+                .your__name, .your__email, .your__phone {
+                    border-radius: 4px;
+                    background: #f5f5f5;
+                    padding: 13px 16px;
+                    flex: 1; 
+                    min-width: 200px;
+                }
+            }
+            textarea {
+                width: 100%;
+                height: 207px;
+                resize: none;
+                border-radius: 4px;
+                background: #f5f5f5;
+                display: block;
+                padding: 13px 16px;
+            }
+            button {
+                border-radius: 4px;
+                width: 215px;
+                height: 56px;
+                font-weight: 500;
+                color: #fafafa;
+                background: #db4444;
+                cursor: pointer;
+                margin-top: auto;
+                align-self: flex-end;
+            }
+        }
+    }
+}

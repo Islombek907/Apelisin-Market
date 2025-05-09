@@ -1,0 +1,105 @@
+.about {
+    margin-bottom: 199px;
+    .container {
+        display: block;
+        margin-top: 80px;
+        margin-bottom: 42px;
+        font-size: 14px;
+        a {
+            cursor: pointer;
+            color: #000;
+            opacity: 0.5;
+        }
+        span {
+            color: #000;
+        }
+    }
+    .our__story {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 140px;
+        .our__story-left {
+            h1 {
+                font-weight: 600;
+                font-size: 54px;
+                letter-spacing: 0.06em;
+                margin-bottom: 40px;
+            }
+            p {
+                max-width: 525px;
+                width: 100%;
+            }
+            p:first-of-type {
+                margin-bottom: 24px;
+            }
+        }
+    }
+    .stats-cards {
+        display: flex;
+        gap: 30px;
+        margin-bottom: 140px;
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 270px;
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            border-radius: 4px;
+            height: 230px;
+            transition: .3s;
+            &:hover {
+                box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.2);
+                background: #db4444;
+                color: white;
+                .stats-label, .stats-value {
+                    color: white;
+                }
+            }
+            .stats-value {
+                font-weight: 700;
+                font-size: 32px;
+                font-family: 'Inter';
+                letter-spacing: 0.04em;
+                margin: 24px 0 12px;
+            }
+            .icons {
+                font-size: 80px;
+            }
+        }
+    }
+    .team-container {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        .team-card {
+            .team-image {
+                width: 370px;
+                height: 430px;
+                border-radius: 4px;
+                background: #f5f5f5;
+                display: flex;
+                justify-content: center;
+            }
+            h2 {
+                font-weight: 500;
+                font-size: 32px;
+                letter-spacing: 0.04em;
+                margin-top: 32px;
+                margin-bottom: 8px;
+                font-family: 'Inter';
+            }
+            span {
+                font-size: 16px;
+                margin-bottom: 19px;
+            }
+            .team-social {
+                margin-top: 20px;
+                display: flex;
+                align-items: center;
+                gap: 20px;
+            }
+        }
+    }
+}

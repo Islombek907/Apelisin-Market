@@ -1,0 +1,73 @@
+.best-selling {
+    .content {
+      .title-section {
+        margin: 20px 0 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .products-swiper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+        overflow: hidden;
+      }
+    }
+    .banner {
+      background: #000;
+      padding: 69px 56px;
+      display: flex;
+      margin-bottom: 71px;
+      .banner-left {
+        .category {
+          font-weight: 600;
+          color: #0f6;
+        }
+        .title {
+          font-weight: 600;
+          font-size: 48px;
+          letter-spacing: 0.04em;
+          color: #fafafa;
+          margin: 32px 0;
+          max-width: 443px;
+          width: 100%;
+        }
+        .timer {
+          .timer-details {
+            display: flex;
+            gap: 24px;
+            margin-bottom: 40px;
+            div {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              width: 62px;
+              height: 62px;
+              border-radius: 100%;
+              background: #fff;
+              .timer-item {
+                font-weight: 600;
+              }
+              .timer-label {
+                font-weight: 400;
+                font-size: 11px;
+              }
+            }
+          }
+        }
+      }
+      .banner-right {
+        img {
+          width: 511px;
+        }
+      }
+      .buy-btn {
+        padding: 16px 48px;
+        font-weight: 500;
+        color: #fafafa;
+        background: #0f6;
+        border-radius: 4px;
+      }
+    }
+  }

@@ -1,0 +1,62 @@
+.sales {
+    .flash__sales {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 31px;
+      div {
+        display: flex;
+        align-items: flex-end;
+      }
+      .countdown__timer {
+        .timer {
+          display: flex;
+          align-items: flex-end;
+          gap: 17px;
+  
+          .timer__block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+  
+          .timer__label {
+            font-weight: 500;
+            font-size: 12px;
+            color: #000;
+            margin-bottom: 4px;
+            line-height: 18px;
+          }
+  
+          .timer__value {
+            font-size: 32px;
+            font-weight: 700;
+            color: #000;
+            letter-spacing: 0.04em;
+            line-height: 30px;
+          }
+  
+          .timer__separator {
+            font-size: 24px;
+            color: #ff6666;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+            margin-bottom: 8px;
+          }
+        }
+      }
+    }
+    .products-swiper {
+      display: flex;
+      gap: 24px;
+      overflow: hidden;
+      margin-bottom: 40px;
+    }
+    .view-products {
+      display: block;
+      margin: auto;
+      text-align: center;
+    }
+  }

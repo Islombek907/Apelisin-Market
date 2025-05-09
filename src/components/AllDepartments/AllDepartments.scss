@@ -1,0 +1,135 @@
+.all__departments {
+  margin-top: 0;
+  display: flex;
+  margin-bottom: 140px;
+  .sidebar {
+      position: relative;
+      width: 217px;
+      .category-list {
+          width: 100%;
+          padding-right: 10px;
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          padding: 40px 24px;
+
+          &::after {
+              content: '';
+              position: absolute;
+              top: 10px;
+              right: 0;
+              height: 370px;
+              border-right: 0.5px solid #00000030;
+          }
+          li {
+              position: relative;
+
+              a {
+                  text-decoration: none;
+                  color: black;
+                  font-size: 16px;
+                  display: inline-block;
+                  width: 142px;
+              }
+              &::after {
+                  content: '>';
+                  position: absolute;
+                  right: 10px;
+                  top: 50%;
+                  transform: translateY(-50%);
+                  font-size: 16px;
+                  color: black;
+              }
+          }
+      }
+  }
+
+  .main-banner {
+      margin: 40px 42px;
+      padding: 9px 49px;
+      height: 344px;
+      background: #000;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex: 1;
+
+      .banner-content {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .main__left {
+              display: flex;
+              justify-content: center;
+              flex-direction: column;
+
+              .main__title {
+                  display: flex;
+                  gap: 24px;
+                  align-items: center;
+
+                  img {
+                      width: 40px;
+                      height: 40px;
+                  }
+
+                  h2 {
+                      font-weight: 400;
+                      font-size: 16px;
+                      color: #fafafa;
+                      margin: 0;
+                  }
+              }
+
+              .discount {
+                  letter-spacing: 0.04em;
+                  font-weight: 600;
+                  font-size: 48px;
+                  color: #fafafa;
+                  width: 326px;
+                  margin: 22px 0;
+              }
+
+              .shop-now {
+                  color: #fafafa;
+                  display: flex;
+                  align-items: center;
+                  gap: 11px;
+                  text-decoration: none;
+
+                  .shop-now-text {
+                      border-bottom: 1px solid #fafafa;
+                      font-size: 16px;
+                  }
+                  .arrow {
+                      display: inline-block;
+                      width: 25px;
+                      height: 16px;
+                      background: url('/arrow__right.svg') no-repeat;
+                  }
+              }
+          }
+          .main__right {
+              img {
+                  width: 100%;
+              }
+          }
+      }
+      .dots {
+          display: flex;
+          justify-content: center;
+          gap: 10px;
+          span {
+              width: 8px;
+              height: 8px;
+              background: #666;
+              border-radius: 50%;
+              display: inline-block;
+              &.active {
+                  background: #ff0000;
+              }
+          }
+      }
+  }
+}

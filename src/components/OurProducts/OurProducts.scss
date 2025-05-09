@@ -1,0 +1,24 @@
+.our__products {
+    .shop-items {
+      .products-swiper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+        overflow: hidden;
+      }
+    }
+    .last__product {
+      margin-bottom: 60px;
+    }
+    .view-products {
+      display: block;
+      margin: auto;
+      margin-bottom: 140px;
+    }
+    .products__title__and__navigation {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 20px 0 60px;
+    }
+  }

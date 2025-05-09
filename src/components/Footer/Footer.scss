@@ -1,0 +1,96 @@
+.footer {
+    background: #000;
+    padding: 80px 135px;
+        display: flex;
+        justify-content: space-between;
+    .footer__list {
+        display: flex;
+        gap: 24px;
+        flex-direction: column;
+        .footer__title {
+            font-weight: 700;
+            font-size: 24px;
+            letter-spacing: 0.03em;
+            color: #fafafa;
+            font-family: 'Inter';
+        }
+        .subscribe {
+            font-weight: 500;
+            font-size: 20px;
+            color:  #fafafa;
+        }
+        .discount {
+            color: #fafafa;
+        }
+        .email-button {
+            border: 1.50px solid #fafafa;
+            border-radius: 4px;
+            width: 217px;
+            height: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .email-input {
+                color: white;
+            }
+            img {
+                cursor: pointer;
+                display: flex;
+            }
+        }
+    }
+}
+.title__support {
+    font-weight: 500;
+    font-size: 20px;
+    color: #fafafa;
+}
+.footer__info {
+    color: #fafafa;
+}
+.donwload__app {
+    .extra {
+        margin-bottom: 24px;
+    }
+    .diccount-mini {
+        font-weight: 500;
+        font-size: 12px;
+        opacity: 0.7;
+        color: #fafafa;
+    }
+    .app {
+        display: flex;
+        gap: 13px;
+        margin: 12px 0 31px;
+    }
+    .download__right {
+        display: flex ;
+        flex-direction: column;
+        gap: 13px;
+    }
+
+}
+.links {
+    display: flex;
+    gap: 24px;
+    justify-content: flex-start;
+    align-items: center;
+}
+.exclusive, .support, .account {
+    margin-right: 87px;
+}
+.link {
+    margin-right: 95px;
+}
+.extra-suport {
+    margin-bottom: 24px;
+}
+.position {
+    position: relative;
+    .arrow {
+        position: absolute;
+        right: 89px;
+        top: -75px;
+        cursor: pointer;
+    }
+}

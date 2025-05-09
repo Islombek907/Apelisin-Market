@@ -1,0 +1,17 @@
+$Poppins: (400, 'Regular'), (500, 'Medium'), (600, 'SemiBold');
+$Inter : (400, 'Regular'), (500, 'Medium'), (600, 'SemiBold'), (700, 'Bold');
+
+@each $weight, $name in $Poppins {
+    @font-face {
+        font-family: 'Poppins';
+        src: url('../fonts/Poppins-#{$name}.ttf');
+        font-weight: $weight;
+    }
+}
+@each $weight, $name in $Inter {
+    @font-face {
+        font-family: 'Inter';
+        src: url('../fonts/Inter_18pt-#{$name}.ttf');
+        font-weight: $weight;
+    }
+}
