@@ -7,7 +7,7 @@ const OurProducts = () => {
     const fetchProducts = productStore(selectFetchProducts);
     const products = productStore(selectProducts);
     const [currentIndex, setCurrentIndex] = useState(0);
-    const itemsPerPage = 8; // 8 карточек (2 ряда по 4)
+    const itemsPerPage = 8;
 
     useEffect(() => {
         fetchProducts(1);
