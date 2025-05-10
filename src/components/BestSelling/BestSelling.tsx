@@ -30,7 +30,7 @@ const BestSelling = () => {
       <div className="content">
         <div className="title-section">
           <h3 className="title">Best Selling Products</h3>
-          <Link to="/category/all" className="view-all">
+          <Link to="/category/groceries" className="view-all">
             View All
           </Link>
           <div className="navigation">

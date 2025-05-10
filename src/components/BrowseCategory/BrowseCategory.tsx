@@ -26,14 +26,14 @@ const BrowseCategory = () => {
           </div>
           <div className="menu-item">
             <Link to="/category/laptops">
-              <i className="fa-solid fa-computer computers"></i>
+              <i className="fa-solid fa-laptop laptops"></i>
               <span>Computers</span>
             </Link>
           </div>
           <div className="menu-item">
-            <Link to="/category/smartwatches">
-              <i className="fa-solid fa-clock smartwatch"></i>
-              <span>Smartwatch</span>
+            <Link to="/category/mens-watches">
+              <i className="fa-solid fa-clock watch"></i>
+              <span>Watch</span>
             </Link>
           </div>
           <div className="menu-item">

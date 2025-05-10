@@ -20,14 +20,14 @@
                     align-items: center;
                     text-align: center;
                     color: #000;
-                    .phone, .computers, .smartwatch, .camera, .headphone, .gaming {
+                    .phone, .laptops, .watch, .camera, .headphone, .gaming {
                         font-size: 56px;
                     }
                 }
                 &:hover {
                     color: white;
                     background: #db4444;
-                    .phone, .computers, .smartwatch, .camera, .headphone, .gaming {
+                    .phone, .laptops, .watch, .camera, .headphone, .gaming {
                         color: white;
                     }
                     a {

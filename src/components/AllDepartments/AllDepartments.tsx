@@ -7,18 +7,17 @@ const categoryMapping = [
   { displayName: "Men’s Fashion", apiName: "mens-shirts" },
   { displayName: "Electronics", apiName: "smartphones" }, 
   { displayName: "Home & Lifestyle", apiName: "home-decoration" },
-  { displayName: "Medicine", apiName: "health-and-beauty" },
-  { displayName: "Sports & Outdoor", apiName: "sports-accessories" },
-  { displayName: "Baby’s & Toys", apiName: "toys" },
-  { displayName: "Groceries & Pets", apiName: "groceries" },
-  { displayName: "Health & Beauty", apiName: "fragrances" },
+  { displayName: "Sunglasses", apiName: "sunglasses" },
+  { displayName: "Furniture", apiName: "furniture" },
+  { displayName: "Groceries", apiName: "groceries" },
+  { displayName: "Fragrances", apiName: "fragrances" },
 ];
 
 const AllDepartments = () => {
   const [bannerProduct, setBannerProduct] = useState<any>(null);
 
   useEffect(() => {
-    axios.get('https://dummyjson.com/products?limit=1')
+    axios.get('https://dummyjson.com/products?limit=100')
       .then(response => {
         const product = response.data.products[0];
         console.log('Полученный баннерный продукт:', product);
